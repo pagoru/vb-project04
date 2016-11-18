@@ -89,7 +89,7 @@
         End If
 
         If Not currencies.ContainsKey(ComboBox.Text) Then
-            Dim inputCurrency As String = InputBox("asdd")
+            Dim inputCurrency As String = InputBox("Introdueix la conversió de € a" + ComboBox.Text + ".")
             If IsNumeric(inputCurrency) Then
                 currencies.Add(ComboBox.Text, Decimal.Parse(inputCurrency))
             Else
