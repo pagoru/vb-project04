@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TextBox_Input = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox_Converted = New System.Windows.Forms.TextBox()
         Me.Button_7 = New System.Windows.Forms.Button()
         Me.Button_8 = New System.Windows.Forms.Button()
         Me.Button_9 = New System.Windows.Forms.Button()
@@ -34,7 +34,7 @@ Partial Class Form1
         Me.Button_2 = New System.Windows.Forms.Button()
         Me.Button_1 = New System.Windows.Forms.Button()
         Me.Button_0 = New System.Windows.Forms.Button()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox = New System.Windows.Forms.ComboBox()
         Me.Button_Comma = New System.Windows.Forms.Button()
         Me.Button_Delete = New System.Windows.Forms.Button()
         Me.Button_DeleteLast = New System.Windows.Forms.Button()
@@ -50,13 +50,13 @@ Partial Class Form1
         Me.TextBox_Input.TabIndex = 0
         Me.TextBox_Input.Text = "0€"
         '
-        'TextBox2
+        'TextBox_Converted
         '
-        Me.TextBox2.Location = New System.Drawing.Point(127, 13)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(108, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.TextBox_Converted.Location = New System.Drawing.Point(127, 13)
+        Me.TextBox_Converted.Name = "TextBox_Converted"
+        Me.TextBox_Converted.ReadOnly = True
+        Me.TextBox_Converted.Size = New System.Drawing.Size(108, 20)
+        Me.TextBox_Converted.TabIndex = 1
         '
         'Button_7
         '
@@ -148,14 +148,14 @@ Partial Class Form1
         Me.Button_0.Text = "0"
         Me.Button_0.UseVisualStyleBackColor = True
         '
-        'ComboBox2
+        'ComboBox
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Dollars", "Yens", "Lliures", "Esterlines", "Dracmes "})
-        Me.ComboBox2.Location = New System.Drawing.Point(127, 39)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(108, 21)
-        Me.ComboBox2.TabIndex = 13
+        Me.ComboBox.FormattingEnabled = True
+        Me.ComboBox.Items.AddRange(New Object() {"Dollars", "Yens", "Lliures", "Esterlines", "Dracmes "})
+        Me.ComboBox.Location = New System.Drawing.Point(127, 39)
+        Me.ComboBox.Name = "ComboBox"
+        Me.ComboBox.Size = New System.Drawing.Size(108, 21)
+        Me.ComboBox.TabIndex = 13
         '
         'Button_Comma
         '
@@ -202,7 +202,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button_DeleteLast)
         Me.Controls.Add(Me.Button_Delete)
         Me.Controls.Add(Me.Button_Comma)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox)
         Me.Controls.Add(Me.Button_0)
         Me.Controls.Add(Me.Button_3)
         Me.Controls.Add(Me.Button_2)
@@ -213,17 +213,17 @@ Partial Class Form1
         Me.Controls.Add(Me.Button_9)
         Me.Controls.Add(Me.Button_8)
         Me.Controls.Add(Me.Button_7)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox_Converted)
         Me.Controls.Add(Me.TextBox_Input)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Pablo González"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents TextBox_Input As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox_Converted As TextBox
     Friend WithEvents Button_7 As Button
     Friend WithEvents Button_8 As Button
     Friend WithEvents Button_9 As Button
@@ -234,7 +234,7 @@ Partial Class Form1
     Friend WithEvents Button_2 As Button
     Friend WithEvents Button_1 As Button
     Friend WithEvents Button_0 As Button
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox As ComboBox
     Friend WithEvents Button_Comma As Button
     Friend WithEvents Button_Delete As Button
     Friend WithEvents Button_DeleteLast As Button
